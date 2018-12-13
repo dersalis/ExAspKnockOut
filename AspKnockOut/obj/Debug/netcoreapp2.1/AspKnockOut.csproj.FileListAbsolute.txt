@@ -30,3 +30,4 @@
 /Users/damianruta/WORKSPACE/EXER/cs/ExAspKnockOut/AspKnockOut/obj/Debug/netcoreapp2.1/AspKnockOut.dll
 /Users/damianruta/WORKSPACE/EXER/cs/ExAspKnockOut/AspKnockOut/obj/Debug/netcoreapp2.1/AspKnockOut.pdb
 /Users/damianruta/WORKSPACE/EXER/cs/ExAspKnockOut/AspKnockOut/obj/Debug/netcoreapp2.1/AspKnockOut.csproj.CopyComplete
+/Users/damianruta/WORKSPACE/EXER/cs/ExAspKnockOut/AspKnockOut/obj/Debug/netcoreapp2.1/Razor/Views/Home/Add.g.cshtml.cs

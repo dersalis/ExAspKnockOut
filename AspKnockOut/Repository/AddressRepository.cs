@@ -14,7 +14,8 @@ namespace AspKnockOut.Repository
 
     public void Add(Address address)
     {
-      throw new System.NotImplementedException();
+      _context.Add(address);
+      _context.SaveChanges();
     }
 
     public IEnumerable<Address> GetAll()

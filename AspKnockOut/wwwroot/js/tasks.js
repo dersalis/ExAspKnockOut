@@ -12,14 +12,16 @@ function tasksViewModel(){
   var self = this;
 
   self.addressesList = ko.observableArray([]);
-
+  self.showData = function(){
+    $.getJSON("/api/addresses", function(allData) {
+      var mappedAddresses = $.map(allData, function(item) { return new Address(item) });
+      self.addressesList(mappedAddresses);
+      // console.log(mappedAddresses);
+    });
+  }
   self.someText = "Jest OK!";
 
-  $.getJSON("/api/tasks", function(allData) {
-    var mappedAddresses = $.map(allData, function(item) { return new Address(item) });
-    self.addressesList(mappedAddresses);
-    // console.log(mappedAddresses);
-  });
+  self.showData();
 }
 
 ko.applyBindings(new tasksViewModel());
